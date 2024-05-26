@@ -343,7 +343,7 @@ tab:not([pinned]):hover .tab-close-button {
 
 
 
-/* 🔗 URLBAR Inbut https: */
+/* 🔗 URLBAR Input https: */
 #urlbar-input {
   transition: transform 0.1s linear;
   transform: none !important;
@@ -352,8 +352,9 @@ tab:not([pinned]):hover .tab-close-button {
   padding-inline: 0px !important;
 }
 
+
+
 /* 📐 URLBAR in Tab */
-/* Source: https://github.com/MrOtherGuy/firefox-csshacks/.../selected_tab_as_urlbar.css */
 
 /* Source file https://github.com/MrOtherGuy/firefox-csshacks/tree/master/chrome/selected_tab_as_urlbar.css made available under Mozilla Public License v. 2.0
 See the above repository for updates as well as full license text. */
@@ -441,6 +442,15 @@ See the above repository for updates as well as full license text. */
   margin-right: 112px !important; /* This is space on right side for 3 buttons, menu, overflow and addons */
   margin-left: 80px !important;
 }
+
+#downloads-button {
+  visibility: visible !important;
+}
+
+#urlbar-input {
+  text-align: center;
+}
+
 #unified-extensions-button{
   visibility: visible !important;
 }
@@ -537,13 +547,13 @@ See the above repository for updates as well as full license text. */
   will-change: unset !important;
   transition: none !important;
 }
-}
+
 
 /* ⬇️ Downloads Indicator */
 #downloads-button {
-  position: fixed !important;
-  top: 0 !important;
-  right: 0 !important;
+  position: fixed ;
+  top: 0;
+  right: 0;
   width: var(--tab-min-height);
   z-index: 1;
 }
@@ -577,6 +587,7 @@ See the above repository for updates as well as full license text. */
 #downloadsPanel {
   position: fixed !important;
   margin: 4px var(--6) !important;
+  border-radius: var(--6) !important;
 }
 #downloadsPanel-mainView {
   background-color: var(--grey) !important;
@@ -606,5 +617,5 @@ See the above repository for updates as well as full license text. */
 }
 .urlbarView {
   background-color: var(--lwt-accent-color); /* Pop-up background color (adaptive) */
-  color: grey;                               /* Pop-up text color */
-
+  color: grey;    
+                           }                           /* Pop-up text color */
